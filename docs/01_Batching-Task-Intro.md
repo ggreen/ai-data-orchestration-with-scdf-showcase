@@ -32,7 +32,7 @@ cd data-orchestration-with-scdf-showcase
 Build (first time only)
 
 ```shell
-mvn -Dmaven.test.skip=true package
+./mvnw -Dmaven.test.skip=true package
 ```
 
 
