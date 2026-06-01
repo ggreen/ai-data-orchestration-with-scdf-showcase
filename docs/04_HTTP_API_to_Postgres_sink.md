@@ -93,10 +93,10 @@ Import RabbitMQ applications from Maven
 
 
 
-Build application
+Build application (if not built)
 
 ```shell
-mvn package
+ ./mvnw -Dmaven.test.skip=true package
 ```
 
 
@@ -278,6 +278,8 @@ exit
 
 -----------------------
 # Tear Down
+
+(Optional)
 
 - Stop Data Flow Server (Control C)
 - Stop SKipper (Control C)
