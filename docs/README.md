@@ -16,6 +16,21 @@ Pre-requisite
 - [Wget](https://formulae.brew.sh/formula/wget) (ex: brew install wget)
 
 
+In preparement for the labs,
+please pull the following podman images.
+
+```shell
+podman pull rabbitmq:4.2-management
+podman pull postgres:15
+podman pull valkey/valkey:latest
+```
+
+Also, Optional pull the following for the bonus lab
+
+```shell
+podman pull ghcr.io/postgresml/postgresml:2.10.0
+```
+
 
 | Lab                                              | Notes                      |
 |--------------------------------------------------|----------------------------|

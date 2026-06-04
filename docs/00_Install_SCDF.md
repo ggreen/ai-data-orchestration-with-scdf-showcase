@@ -40,13 +40,18 @@ wget --directory-prefix=runtime/scdf https://repo.maven.apache.org/maven2/org/sp
 deployment/local/podman/rabbit/start.sh
 ```
 
-Start Skipper
+Start Skipper 
+
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
 ```shell
 ./deployment/local/dataflow/start-skipper.sh
 ```
 
 
 Start Data Flow Server
+
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
+
 ```shell
 ./deployment/local/dataflow/start-df-server.sh
 ```
@@ -67,6 +72,8 @@ Import Application
 
 
 Access CLI
+
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
 
 ```shell
 deployment/local/dataflow/shell.sh
