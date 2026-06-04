@@ -40,12 +40,14 @@ Build (first time only)
 
 Start Postgres
 
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
+
 ```shell
 ./deployment/local/podman/postgres/start.sh 
 ```
 
 Access PSQL
-
+(Use a new shell)
 ```shell
 podman exec -it postgresql psql -U postgres -d postgres
 ```
@@ -80,6 +82,7 @@ INSERT INTO cache_accounts.account (id, name, first_nm, last_nm, email, phone) V
 
 Start ValKey
 
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
 ```shell
 ./deployment/local/podman/valkey/start.sh
 ```
@@ -88,6 +91,7 @@ Start ValKey
 ## Running the accounts
 
 Generate Register Script
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
 
 ```shell
 mkdir -p runtime/scripts
@@ -97,6 +101,8 @@ cat runtime/scripts/account-batch.shell
 
 
 Register Account Batch
+
+(Use a new shell *from the data-orchestration-with-scdf-showcase directory*)
 
 NOTE: Please make sure to adjust the path to scdf jar or account-batch.shell file if your running in errors with registering the application
 
@@ -148,6 +154,7 @@ http://localhost:9393/dashboard/index.html#/tasks-jobs/job-executions
 
 1. Access Psql
 
+(Use a new shell)
 ```shell
 podman exec -it postgresql psql -U postgres -d postgres
 ```
@@ -162,6 +169,7 @@ select * from cache_accounts.account;
 
 1. Access Valkey
 
+(Use a new shell)
 ```shell
 podman exec -it valkey valkey-cli
 ```
